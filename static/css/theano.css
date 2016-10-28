@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'theano';
+    src: url('../fonts/TheanoDidot-Regular-webfont.eot');
+    src: url('../fonts/TheanoDidot-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TheanoDidot-Regular-webfont.woff') format('woff'),
+         url('../fonts/TheanoDidot-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/TheanoDidot-Regular-webfont.svg#theano_didotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.qcname {
+  font-family: theano !important;
+  font-variant: small-caps !important;
+  text-transform: capitalize;
+  font-size:40px;
+}
