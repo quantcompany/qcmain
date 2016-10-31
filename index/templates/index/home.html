@@ -6,7 +6,7 @@
 	<meta name="author" content="Denis Samardjiev" />
 	<meta name="description" content="Particles - Personal + Agency Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Particles - Personal + Agency Template</title>
+	<title>Quant Company - Value Form Data</title>
 
 	<!-- Royal Preloader CSS -->
 	<link href="{% static 'css/royal_preloader.css' %}" rel="stylesheet">
@@ -82,8 +82,8 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#home" data-id="home" class="scroll-link">Inicio</a></li>
 							<li><a href="http://edu.quantcompany.com">Cursos</a></li>
-              <li><a href="#work" data-id="work" class="scroll-link">Aplicaciones Analiticas</a></li>
-              <li><a href="#about" data-id="about" class="scroll-link">Consultoria</a></li>
+              <li><a href="#work" data-id="work" class="scroll-link">Aplicaciones Analíticas</a></li>
+              <li><a href="#about" data-id="about" class="scroll-link">Consultoría</a></li>
 							<li><a href="#contact" data-id="contact" class="scroll-link">Contacto</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></a>
@@ -111,10 +111,10 @@
 			<div class="center-vertically">
 				<div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
 					<h1 class="scaleReveal">
-						A template with a bit of a different <strong>look &amp; feel</strong>.
+						Servicios en Ciencias de Datos: <br><strong>&#8226;Cursos<br>&#8226;Software<br>&#8226;Consultoría</strong>
 					</h1>
 					<hr class="bottomReveal">
-					<p class="bottomReveal">Particles is a fun and multipurpose template, with clean &amp; modern design <i>+</i>&nbsp; code.</p>
+					<p class="bottomReveal">Nuestra misión es ayudar a su organización a obtener: <br><strong>valor de los datos.</strong></p>
 					<a href="#ideology" data-id="ideology" class="scroll-link">
 						<div class="scroll-indicator rotateBottomReveal">
 							<span class="ion-mouse"></span><br>
@@ -135,10 +135,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-2 col-sm-3">
-						<h2 class="no-margin rotateLeftReveal">Hello.</h2>
+						<h2 class="no-margin rotateLeftReveal">Hola!</h2>
 					</div>
 					<div class="col-lg-10 col-sm-9 mt30-xs">
-						<h3 class="no-margin rightReveal">We are an interactive agency with a focus on UI design and development. Our team is from all over the world and <strong>we know how to deliver quality pixels from miles away</strong>.</h3>
+						<h3 class="no-margin rightReveal"><span class="qcname" style="font-size: 20pt">Quant Company</span> ofrece servicios de desarrollo de software, consultoría y formación en Ciencia de Datos. Producimos soluciones utilizando <strong>analítica de negocios, machine learning, estadística, visualización y Big Data</strong>.</h3>
 					</div>
 				</div>
 			</div>
@@ -255,9 +255,10 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 section-title text-center">
-					<h2>Work</h2>
+					<h2 class="qcname">Aplicaciones Analíticas</h2>
 					<span class="section-divider mb15"></span>
-					<p class="mb30 scaleReveal">We do awesome stuff, and yeah.</p>
+					<p class="mb30 scaleReveal">Nos especializamos en el desarrollo de <strong>aplicaciones análiticas</strong>: aquellas
+						que permiten al usuario interactuar y extraer información útil de los datos.</p>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 			<div class="row">
@@ -277,156 +278,55 @@
 			<div id="thework">
 				<!-- Item 1 -->
 			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="3">
-			    	<div class="portfolio-image-holder"><img src="images/work/1.jpg" alt="1" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Graphics</span>
+			    	<div class="portfolio-image-holder"><img src="{%static 'images/tripletherapy.png'%}" alt="1" class="img-responsive portfolio-image"></div>
+			    	<span class="portfolio-badge badge">TripleTherapy.net</span>
 			    	<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
+							<a href="http://tripletherapy.net/" target="_blank">
 								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
 							</a>
-							<a href="images/work/1.jpg" class="zoom" title="Equipt Design">
+							<a href="{%static 'images/tripletherapy_big.png'%}" class="zoom" title="Physician Decision Aid">
 								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Equipt Design</span>
+							<span class="project-title no-margin-bottom mt10">Triple Therapy: Physician Decision Aid</span>
 						</span>
 					</span>
 			    </div><!-- /.column -->
 
 			    <!-- Item 2 -->
 			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity" data-my-order="6">
-			    	<div class="portfolio-image-holder"><img src="images/work/2.jpg" alt="2" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Print + Identity</span>
+			    	<div class="portfolio-image-holder"><img src="{%static 'images/umedellin.png'%}" alt="2" class="img-responsive portfolio-image"></div>
+			    	<span class="portfolio-badge badge">Saber Pro Universidad de Medellín</span>
 			    	<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
+							<a href="https://quantcompany.shinyapps.io/SaberPro_UMed/" target="_blank">
 								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
 							</a>
-							<a href="images/work/2.jpg" class="zoom" title="Goodman's Burger">
+							<a href="{%static 'images/umedellin2.png'%}" class="zoom" title="Modelo predictivo Saber Pro">
 								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Goodman's Burger</span>
+							<span class="project-title no-margin-bottom mt10">Modelo predictivo pruebas Saber Pro</span>
 						</span>
 					</span>
 			    </div><!-- /.column -->
 
 			    <!-- Item 3 -->
 			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix identity" data-my-order="4">
-			    	<div class="portfolio-image-holder"><img src="images/work/3.jpg" alt="3" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Print</span>
+			    	<div class="portfolio-image-holder"><img src="{%static 'images/ipc.png'%}" alt="3" class="img-responsive portfolio-image"></div>
+			    	<span class="portfolio-badge badge">Modelo Predictivo IPC Guatemala</span>
 			    	<span class="portfolio-hover">
 						<span>
-							<a href="https://dribbble.com/" target="_blank">
+							<a href="https://quantcompany.shinyapps.io/IPC_GT/" target="_blank">
 								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
 							</a>
-							<a href="images/work/3.jpg" class="zoom" title="Paper Mockup">
+							<a href="{%static 'images/ipc_big.png'%}" class="zoom" title="Predicción IPC Guatemala">
 								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
 							</a>
-							<span class="project-title no-margin-bottom mt10">Paper Mockup</span>
+							<span class="project-title no-margin-bottom mt10">Modelo Predictivo IPC Guatemala</span>
 						</span>
 					</span>
 			    </div><!-- /.column -->
 
-			    <!-- Item 4 -->
-			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="5">
-			    	<div class="portfolio-image-holder"><img src="images/work/4.jpg" alt="4" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Graphics</span>
-			    	<span class="portfolio-hover">
-						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/4.jpg" class="zoom" title="Simple Pleasure">
-								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
-							</a>
-							<span class="project-title no-margin-bottom mt10">Simple Pleasure</span>
-						</span>
-					</span>
-			    </div><!-- /.column -->
-
-			    <!-- Item 5 -->
-			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity" data-my-order="2">
-			    	<div class="portfolio-image-holder"><img src="images/work/5.jpg" alt="5" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Print + Identity</span>
-			    	<span class="portfolio-hover">
-						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/5.jpg" class="zoom" title="Wine Bottles">
-								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
-							</a>
-							<span class="project-title no-margin-bottom mt10">Wine Bottles</span>
-						</span>
-					</span>
-			    </div><!-- /.column -->
-
-			    <!-- Item 6 -->
-			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="1">
-			    	<div class="portfolio-image-holder"><img src="images/work/6.jpg" alt="6" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Web</span>
-			    	<span class="portfolio-hover">
-						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/6.jpg" class="zoom" title="Web UI">
-								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
-							</a>
-							<span class="project-title no-margin-bottom mt10">Web UI</span>
-						</span>
-					</span>
-			    </div><!-- /.column -->
-
-			    <!-- Item 7 -->
-			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics print" data-my-order="9">
-			    	<div class="portfolio-image-holder"><img src="images/work/7.jpg" alt="7" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Graphics + Print</span>
-			    	<span class="portfolio-hover">
-						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/7.jpg" class="zoom" title="Hello World">
-								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
-							</a>
-							<span class="project-title no-margin-bottom mt10">Hello World</span>
-						</span>
-					</span>
-			    </div><!-- /.column -->
-
-			    <!-- Item 8 -->
-			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="7">
-			    	<div class="portfolio-image-holder"><img src="images/work/8.jpg" alt="8" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Web</span>
-			    	<span class="portfolio-hover">
-						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/8.jpg" class="zoom" title="We Create Mobile">
-								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
-							</a>
-							<span class="project-title no-margin-bottom mt10">We Create Mobile</span>
-						</span>
-					</span>
-			    </div><!-- /.column -->
-
-			    <!-- Item 9 -->
-			    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="8">
-			    	<div class="portfolio-image-holder"><img src="images/work/9.jpg" alt="9" class="img-responsive portfolio-image"></div>
-			    	<span class="portfolio-badge badge">Web</span>
-			    	<span class="portfolio-hover">
-						<span>
-							<a href="https://dribbble.com/" target="_blank">
-								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
-							</a>
-							<a href="images/work/9.jpg" class="zoom" title="Captain da Ship">
-								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
-							</a>
-							<span class="project-title no-margin-bottom mt10">Captain da Ship</span>
-						</span>
-					</span>
-			    </div><!-- /.column -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /.section -->
@@ -437,66 +337,59 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 section-title text-center">
-          <h2>About</h2>
+          <h2 class="qcname">Consultoría</h2>
           <span class="section-divider"></span>
         </div><!-- /.column -->
       </div><!-- /.row -->
       <div class="row mb15">
         <div class="col-sm-5 leftReveal">
-          <h5 class="heading-1 mb20">Our Trade</h5>
-          <h3 class="mb15 no-margin-top">Designing, Developing, and <br>Innovating for people like you...</h3>
-          <p class="no-margin text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tristiq enim. Integer eu <strong>neque</strong> arcu. Aenean sed odio nibh. Cras imperdiet, arcu eget dictum vestibulum elit.</p>
+          <h5 class="heading-1 mb20">Descubra el valor en sus datos</h5>
+          <h3 class="mb15 no-margin-top">Empieze a tomar decisiones de<br>manera óptima: con base en los <strong>datos</strong></h3>
+          <p class="no-margin text-small">Utilizamos métodos y tecnologías para analizar datos inteligentemente y descubrir conocimiento
+			  que guiará la toma de <strong>decisiones estratégicas</strong>.</p>
         </div><!-- /.column -->
         <div class="col-sm-7 mt30-xs rightReveal">
-          <h5 class="heading-1 mb20">How we started it</h5>
+          <h5 class="heading-1 mb20">Datos: el activo estratégico de esta era</h5>
           <span class="icon-handle-streamline-vector logo-about"></span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, imperdiet eget sem at, pellentesque cursus elit. Etiam id ante et elit interdum sollicitudin. Cras imperdiet, arcu eget dictum vestibulum elit.</p>
-          <p>Curabitur egestas interdum ex, sed commodo ipsum consectetur vitae. Nulla auctor ante erat. Class aptent taciti sociosqu nostra enean sed.</p>
+          <p>Nuetros consultores pueden ayudarle a utilizar sus datos para descubrir y aprovechar las oportunidades derivadas
+			  del las grandes cantidades de datos sin precedentes con las que cuentan las organizaciones actualmente.</p>
+          <p>Empieze a utilizar sus datos como un <strong>activo estratégico</strong> para transformar y modernizar su organización.</p>
         </div><!-- /.column -->
       </div><!-- /.row -->
       <div class="row mb30">
         <div class="col-sm-9 leftReveal">
-          <h5 class="heading-1 mb20">Why?</h5>
-          <p class="lead no-margin">Lorem ipsum dolor sit amet, consectetur adipicing elit. tristique enim. Integer euef neque arcu. Aenean sed odio nibh. <strong>Cras imperdiet</strong>, arcu eget dictum vestibulumizor. Lorem ipsil dolor sit amet, consectetur adipiscing elit.</p>
+          <h5 class="heading-1 mb20">Nuestra especialidad: soluciones y respuestas</h5>
+          <p class="lead no-margin">Resolvemos <strong>problemas clave</strong> y respondemos <strong>preguntas importantes</strong>
+			  combinando analítica de datos y métodos cuatitativos (modelado matemático, optimización, simulación, estadística).
+			  Nuestro objetivo es entregar análisis e información que proporcionen <strong>valor</strong> a su organización.</p>
         </div><!-- /.column -->
         <div class="col-sm-3 mt30-xs rightReveal">
-          <h5 class="heading-1 mb20">Quote</h5>
-          <p class="no-margin text-small"><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus quibusdam."</i></p>
+          <h5 class="heading-1 mb20">Nuestros clientes</h5>
+          <p class="no-margin text-small"><i>"Los servicios proporcionados por Quant Company fueron excelentes, utilizamos los resultados de los análisis desde el primer día."</i></p>
         </div><!-- /.column -->
       </div><!-- /.row -->
       <div class="row">
         <div class="col-lg-7 col-sm-5 bottomReveal">
-          <h5 class="heading-1 mb20">Skills</h5>
+          <h5 class="heading-1 mb20">Servicios de Consultoría en:</h5>
           <div class="progress">
-            <div class="progress-bar text-left" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-              Development
+            <div class="progress-bar text-left" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+              Analítica de Negocios
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar text-left" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-              Design
+            <div class="progress-bar text-left" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+              Análisis Estadístico
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar text-left" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%;">
-              Photography
+            <div class="progress-bar text-left" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+              Diseño y Análisis de Encuestas
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar text-left" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-              Icon Design
+            <div class="progress-bar text-left" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+              Métodos Cuantitativos
             </div>
-          </div>
-          <div class="progress">
-            <div class="progress-bar text-left" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-              Audio
-            </div>
-          </div>
-          <div class="progress-meter mb30-xs">
-            <div class="meter meter-left" style="width: 30%;"><span class="meter-text">Beginner</span></div>
-            <div class="meter meter-left" style="width: 20%;"><span class="meter-text">Intermediate</span></div>
-              <div class="meter meter-right" style="width: 20%;"><span class="meter-text">Pro</span></div>
-            <div class="meter meter-right" style="width: 30%;"><span class="meter-text">Master</span></div>
           </div>
         </div><!-- /.column -->
         <div class="col-lg-5 col-sm-7 mt10 rotateLeftReveal">
@@ -506,18 +399,30 @@
               <li data-target="#about-carousel" data-slide-to="0" class="active"></li>
               <li data-target="#about-carousel" data-slide-to="1"></li>
               <li data-target="#about-carousel" data-slide-to="2"></li>
+			  <li data-target="#about-carousel" data-slide-to="3"></li>
+			  <li data-target="#about-carousel" data-slide-to="4"></li>
+			  <li data-target="#about-carousel" data-slide-to="5"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="images/placeholder.png" alt="..." class="img-responsive">
+                <img src="{%static 'images/logos/macmaster.jpeg'%}" alt="macmasteru" class="img-responsive">
               </div>
               <div class="item">
-                <img src="images/placeholder2.png" alt="..." class="img-responsive">
+                <img src="{%static 'images/logos/chec.jpg'%}" alt="chec" class="img-responsive">
               </div>
               <div class="item">
-                <img src="images/placeholder3.png" alt="..." class="img-responsive">
+                <img src="{%static 'images/logos/phri.png'%}" alt="phri" class="img-responsive">
+              </div>
+              <div class="item">
+                <img src="{%static 'images/logos/banguat.png'%}" alt="banguat" class="img-responsive">
+              </div>
+              <div class="item">
+				<img src="{%static 'images/logos/umedellin.png'%}" alt="umedellin" class="img-responsive">
+              </div>
+              <div class="item">
+                <img src="{%static 'images/logos/umanizales.jpg'%}" alt="umanizales" class="img-responsive">
               </div>
             </div>
           </div>
@@ -532,20 +437,16 @@
     <div class="container">
       <div class="row mb30">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 section-title text-center">
-          <h2>Contact</h2>
+          <h2 class="qcname">Contacto</h2>
           <span class="section-divider mb15"></span>
-          <p class="no-margin scaleReveal">Our team is from all over the world and we know how to deliver quality pixels from miles away.</p>
+          <p class="no-margin scaleReveal">Por favor contáctenos si desea mayor información sobre nuestros servicios. Nos comunicaremos lo más pronto posible.</p>
         </div><!-- /.column -->
       </div><!-- /.row -->
       <div class="row">
         <div class="col-sm-5 col-lg-4">
-          <h5 class="heading-1 mb20">Visit Us</h5>
-          <h4 class="mb15">142 Pelican Drive • 1252nd Floor, Suite 420<br>New York City, New York 99912</h4>
-          <p class="no-margin text-xs-small">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates. Temporibus autem quibusdam et aut.</p>
-          <hr class="mini-hr">
-          <p class="text-xs-small mb5"><strong class="text-switch">Email:</strong> info@particle.com</p>
-          <p class="text-xs-small mb5"><strong class="text-switch">Phone:</strong> +1 212-249-2390</p>
-          <p class="text-xs-small mb5"><strong class="text-switch">Fax:</strong> +1 112-444-2390</p>
+		  <p>Escríbanos o llámenos:</p>
+          <p><strong class="text-switch">Email:</strong> info@quantcompany.com</p>
+          <p><strong class="text-switch">Phone:</strong> +57 300-894-4212</p>
         </div><!-- /.column -->
         <div class="col-sm-6 col-lg-7 mt30-xs">
           <form data-toggle="validator" id="contactForm" name="contactForm">
@@ -554,7 +455,7 @@
                 <div class="form-group">
                   <div class="controls">
                     <input class="form-control" data-error="This section is required."
-                    id="msg_subject" placeholder="Subject *" required="" type="text">
+                    id="msg_subject" placeholder="Asunto *" required="" type="text">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -562,7 +463,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <div class="controls">
-                    <input class="form-control" id="phone" placeholder="Phone" type="text">
+                    <input class="form-control" id="phone" placeholder="Teléfono" type="text">
                   </div>
                 </div>
               </div><!-- /.column -->
@@ -571,7 +472,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <div class="controls">
-                    <input class="form-control" data-error="This section is required." id="name" placeholder="Your Name *" required="" type="text">
+                    <input class="form-control" data-error="This section is required." id="name" placeholder="Nombre *" required="" type="text">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -589,7 +490,7 @@
               <div class="col-sm-12">
                 <div class="form-group">
                   <div class="controls">
-                    <textarea class="form-control" data-error="This section is required." id="message" placeholder="Message *" required="" rows="5"></textarea>
+                    <textarea class="form-control" data-error="This section is required." id="message" placeholder="Mensaje *" required="" rows="6"></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -600,7 +501,7 @@
                 <div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div>
               </div><!-- /.column -->
               <div class="col-sm-6 text-right">
-                <button type="submit" id="submit" class="btn btn-default btn-lg">Send</button>
+                <button type="submit" id="submit" class="btn btn-default btn-lg">Enviar</button>
               </div><!-- /.column -->
             </div><!-- /.row -->
           </form><!-- /.form -->
@@ -1190,18 +1091,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 text-center">
-					<span class="icon-handle-streamline-vector logo"></span>
-					<h2 class="theme-title">Particles<span class="theme-title-smaller">Theme</span></h2>
-					<a href="#"><span class="ion-social-twitter social-icons-dark-hover mr15"></span></a>
-	                <a href="#"><span class="ion-social-facebook social-icons-dark-hover mr15"></span></a>
-	                <a href="#"><span class="ion-social-googleplus-outline social-icons-dark-hover"></span></a>
+					<h2 class="qcname">Quant Company</h2>
+					<a href="https://twitter.com/quantcompany"><span class="ion-social-twitter social-icons-dark-hover mr15"></span></a>
+	                <a href="https://www.facebook.com/quantcompany/"><span class="ion-social-facebook social-icons-dark-hover mr15"></span></a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
 					<hr>
-					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
-					<p class="no-margin">&copy; Denis Samardjiev</p>
+					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Arriba</button>
+					<p class="no-margin">&copy; Quant Company 2016</p>
 				</div><!-- /.column -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
