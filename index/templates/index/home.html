@@ -27,6 +27,9 @@
 		});
 	</script>
 
+	<!-- Flags -->
+	<link href="{% static 'flag-icon/css/flag-icon.min.css' %}" type="text/css" rel="stylesheet">
+
 	<!-- Stylesheets -->
 	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="{% static 'css/ionicons.min.css' %}" rel="stylesheet">
@@ -67,7 +70,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
+					<div class="navbar-header" style="padding:15px;">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -86,13 +89,13 @@
               <li><a href="#about" data-id="about" class="scroll-link">Consultoría</a></li>
 							<li><a href="#contact" data-id="contact" class="scroll-link">Contacto</a></li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></a>
+								<a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-es"></span> ES</a>
 								<ul class="dropdown-menu">
-									<li><a href="components.html">Components</a></li>
-									<li><a href="pricing-options.html">Pricing Options</a></li>
-									<li><a href="team-options.html">Team Options</a></li>
-									<li><a href="../index.html">Demos</a></li>
-									<li><a href="https://wrapbootstrap.com/theme/particles-personal-agency-template-WB05N7852" target="_blank">Purchase</a></li>
+									<li><a href="/"><span class="flag-icon flag-icon-us"></span> EN</a></li>
+									<!-- <li><a href="pricing-options.html">Pricing Options</a></li> -->
+									<!-- <li><a href="team-options.html">Team Options</a></li> -->
+									<!-- <li><a href="../index.html">Demos</a></li> -->
+									<!-- <li><a href="https://wrapbootstrap.com/theme/particles-personal-agency-template-WB05N7852" target="_blank">Purchase</a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -452,12 +455,12 @@
         </div><!-- /.column -->
         <div class="col-sm-6 col-lg-7 mt30-xs">
           <form data-toggle="validator" id="contactForm" name="contactForm">
+						{% csrf_token %}
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
                   <div class="controls">
-                    <input class="form-control" data-error="This section is required."
-                    id="msg_subject" placeholder="Asunto *" required="" type="text">
+                    <input class="form-control" data-error="Este campo es requerido." id="msg_subject" placeholder="Asunto *" required="" type="text">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -474,7 +477,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <div class="controls">
-                    <input class="form-control" data-error="This section is required." id="name" placeholder="Nombre *" required="" type="text">
+                    <input class="form-control" data-error="Este campo es requerido." id="name" placeholder="Nombre *" required="" type="text">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -482,7 +485,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <div class="controls">
-                    <input class="email form-control" data-error="This section is required." id="email" placeholder="Email *" required="" type="email">
+                    <input class="email form-control" data-error="Ingrese un correo valido." id="email" placeholder="Email *" required="" type="email">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -492,7 +495,7 @@
               <div class="col-sm-12">
                 <div class="form-group">
                   <div class="controls">
-                    <textarea class="form-control" data-error="This section is required." id="message" placeholder="Mensaje *" required="" rows="6"></textarea>
+                    <textarea class="form-control" data-error="Este campo es requerido." id="message" placeholder="Mensaje *" required="" rows="6"></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
